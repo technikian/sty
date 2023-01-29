@@ -1,16 +1,46 @@
 
 .. image:: https://raw.githubusercontent.com/feluxe/sty/master/assets/README_logo.png
    :target: https://raw.githubusercontent.com/feluxe/sty/master/assets/README_logo.png
-   :align: center
    :alt: sty_logo
+
+|
+
+|badge-total-downloads| |badge-monthly-downloads|
+
+.. |badge-total-downloads| image:: https://static.pepy.tech/personalized-badge/sty?period=total&units=international_system&left_color=grey&right_color=lightgrey&left_text=downloads
+   :target: https://static.pepy.tech/personalized-badge/sty?period=total&units=international_system&left_color=grey&right_color=lightgrey&left_text=downloads
+   :alt: badge-total-downloads
+
+.. |badge-monthly-downloads| image:: https://static.pepy.tech/personalized-badge/sty?period=month&units=international_system&left_color=grey&right_color=lightgrey&left_text=downloads/month
+   :target: https://static.pepy.tech/personalized-badge/sty?period=month&units=international_system&left_color=grey&right_color=lightgrey&left_text=downloads/month
+   :alt: badge-monthly-downloads
 
 ------------
 
 .. image:: https://raw.githubusercontent.com/feluxe/sty/master/assets/README_demo.png
    :target: https://raw.githubusercontent.com/feluxe/sty/master/assets/README_demo.png
-   :align: center
    :alt: sty_demo
-   :width: 600px
+   :width: 100%
+
+
+Release 1.0.0 (February 05. 2022)
+---------------------------------
+
+Sty v1.0.0 released 🎉
+
+At this point sty can be considered stable.
+
+The "release candidate" phase was given a lot of time and nothing critical was reported for a while.
+All features that are planned for the future are compatible with the existing interfaces.
+
+Nothing changed since `rc.2`.
+
+Release 1.0.0-rc.2 (August 28. 2021)
+-------------------------------------
+
+* Fix typo in "reset" register.
+
+`Release Note (Breaking Changes) <https://github.com/feluxe/sty/releases/tag/1.0.0-rc.2>`__
 
 
 Release 1.0.0-rc.1 (January 31. 2021)
@@ -30,7 +60,7 @@ Sty version `1.0.0` is now feature complete.
 * Sty will follow `semver` so there won't be any breaking changes for version `1.x.x` after 1.0.0 was released.
 * This is a pre-release (`rc.0`). I'll release `1.0.0` in a couple of month if no major bugs are reported.
 
-`Breaking Changes <https://github.com/feluxe/sty/releases/tag/1.0.0-rc.0>`__
+`Release Note (Breaking Changes) <https://github.com/feluxe/sty/releases/tag/1.0.0-rc.0>`__
 
 
 Description
@@ -45,6 +75,7 @@ is decoupled from color palettes and terminal implementations.
 * Sty allows you to mute/unmute all styles in your codebase.
 * Sty provides high access performance for all styling rules.
 * Sty is fully typed, you should get good editor support for it.
+* Sty does not implicitly mess with globals. E.g.: `colorama` overrides `sys.stdout` which causes a lot of trouble.
 * Sty has no dependencies.
 * Sty follows `semver <https://semver.org/>`__
 * Sty will support Python `>=3.7` for as long as possible.
@@ -79,7 +110,6 @@ The code above will print like this in the terminal:
 
 .. image:: https://raw.githubusercontent.com/feluxe/sty/master/assets/README_example.png
    :target: https://raw.githubusercontent.com/feluxe/sty/master/assets/README_example.png
-   :align: center
    :alt: example
    :width: 600px
 
